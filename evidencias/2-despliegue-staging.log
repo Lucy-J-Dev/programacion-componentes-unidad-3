@@ -1,0 +1,29 @@
+
+===== node desplegar.js 1.1.0 staging =====
+== Despliegue en STAGING de la versión 1.1.0 ==
+Artefacto: servicio-validacion-1.1.0.tgz
+Integridad SHA-256: OK (210cca4610b25a35...)
+Instalado en instancias/staging-unico/package
+Proceso iniciado: color unico, puerto 4001, PID 2272
+Verificando http://localhost:4001 (ambiente: staging)
+1) Endpoint /health
+  [OK] Responde 200 y status UP -> HTTP 200
+  [OK] Versión desplegada = 1.1.0 -> responde 1.1.0
+2) Endpoint /readiness y dependencias
+  [OK] Responde 200 y status READY -> HTTP 200 READY
+  [OK] Dependencia configuracion -> OK
+  [OK] Dependencia secretoClaveApi -> OK
+  [OK] Dependencia carpetaLogs -> OK
+3) Smoke tests
+  [OK] Transacción válida (espera 200) -> HTTP 200, 7.9 ms
+  [OK] Datos inválidos (monto negativo) (espera 400) -> HTTP 400, 6.3 ms
+  [OK] Fondos insuficientes (espera 409) -> HTTP 409, 6.2 ms
+  [OK] Sin clave X-Api-Key (espera 401) -> HTTP 401, 5.8 ms
+  [OK] Ruta inexistente (espera 404) -> HTTP 404, 5.3 ms
+  [OK] Flag limiteMonto: monto mayor a 300000 (espera 409) -> HTTP 409, 10.0 ms
+4) Latencia y errores (200 peticiones, 10 a la vez)
+  Promedio: 29.6 ms | p50: 19.8 ms | p95: 90.1 ms | errores: 0 de 200
+  [OK] p95 menor a 300 ms -> 90.1 ms
+  [OK] Errores <= 0 -> 0 errores
+Resultado de la verificación: APROBADA (14/14 revisiones OK)
+STAGING OK: la versión 1.1.0 puede pasar a producción.

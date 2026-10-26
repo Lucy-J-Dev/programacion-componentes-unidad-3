@@ -1,0 +1,12 @@
+{
+  "ambiente": "staging",
+  "puerto": 4001,
+  "flags": {
+    "limiteMonto": true
+  },
+  "montoMaximo": 300000,
+  "criterios": {
+    "p95MaximoMs": 300,
+    "erroresPermitidos": 0
+  }
+}

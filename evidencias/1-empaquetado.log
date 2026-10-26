@@ -1,0 +1,14 @@
+
+===== node empaquetar.js =====
+Versión a empaquetar: 1.1.0
+Comando (dentro de app/): npm pack --pack-destination ../repositorio-artefactos
+Artefacto publicado: repositorio-artefactos/servicio-validacion-1.1.0.tgz
+SHA-256: 210cca4610b25a357ec7ea0ab775a807d9e71e07daf43d90299f21abbe9574dc
+Contenido del artefacto:
+  - package/servidor.js
+  - package/package.json
+¿Incluye secretos?: NO
+
+Artefactos disponibles en el repositorio:
+  - servicio-validacion-1.0.0.tgz
+  - servicio-validacion-1.1.0.tgz

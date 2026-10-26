@@ -1,0 +1,16 @@
+{
+  "ambiente": "produccion",
+  "puertoPublico": 8080,
+  "puertos": {
+    "azul": 3001,
+    "verde": 3002
+  },
+  "flags": {
+    "limiteMonto": false
+  },
+  "montoMaximo": 2000000,
+  "criterios": {
+    "p95MaximoMs": 300,
+    "erroresPermitidos": 0
+  }
+}

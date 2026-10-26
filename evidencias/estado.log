@@ -1,0 +1,18 @@
+
+===== node estado.js =====
+Estado de PRODUCCIÓN
+  azul  | versión 1.0.0 | puerto 3001 | encendido
+  verde | versión 1.1.0 | puerto 3002 | encendido | <- RECIBE EL TRÁFICO
+  Puerto público 8080: versión 1.1.0 (color verde)
+
+===== node estado.js =====
+Estado de PRODUCCIÓN
+  azul  | versión 1.0.0 | puerto 3001 | encendido | <- RECIBE EL TRÁFICO
+  verde | versión 1.1.0 | puerto 3002 | encendido
+  Puerto público 8080: versión 1.0.0 (color azul)
+
+===== node estado.js =====
+Estado de PRODUCCIÓN
+  azul  | versión 1.0.0 | puerto 3001 | encendido
+  verde | versión 1.1.0 | puerto 3002 | encendido | <- RECIBE EL TRÁFICO
+  Puerto público 8080: versión 1.1.0 (color verde)

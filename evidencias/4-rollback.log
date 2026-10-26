@@ -1,0 +1,20 @@
+
+===== node revertir.js =====
+== ROLLBACK en producción ==
+Activo ahora: verde (versión 1.1.0)
+Se regresa a: azul (versión 1.0.0)
+Revisión previa de azul: /health HTTP 200, /readiness HTTP 200
+>> CONMUTACIÓN: el tráfico pasa de verde a azul <<
+Puerto público responde: versión 1.0.0, color azul
+Tiempo de la reversión: 19 ms
+ROLLBACK EXITOSO.
+
+===== node revertir.js =====
+== ROLLBACK en producción ==
+Activo ahora: azul (versión 1.0.0)
+Se regresa a: verde (versión 1.1.0)
+Revisión previa de verde: /health HTTP 200, /readiness HTTP 200
+>> CONMUTACIÓN: el tráfico pasa de azul a verde <<
+Puerto público responde: versión 1.1.0, color verde
+Tiempo de la reversión: 11 ms
+ROLLBACK EXITOSO.
